@@ -1,10 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
     const navOptions = <>
-    <li>Home</li>
+    <li><Link to='/'>Home</Link></li>
+    <li><Link to='/menu'>Our Menu</Link></li>
+    <li><Link to='/shop/salad'>Our Shop</Link></li>
+    <li><Link to='/login'>Login</Link></li>
     </>
+
   return (
     <nav>
       <div className="navbar max-w-screen-xl fixed z-50 bg-[#151515] bg-opacity-50 text-white">
